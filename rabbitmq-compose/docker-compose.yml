@@ -9,8 +9,8 @@ rabbit1:
     RABBITMQ_DEFAULT_PASS: "rabbitmq"
     RABBITMQ_DEFAULT_VHOST: "/"
   ports:
-    - "15672:15672"
-    - "5672:5672"
+    - "5000:15672"
+    - "5001:5672"
   labels:
     NAME: "rabbitmq"
   volumes:
