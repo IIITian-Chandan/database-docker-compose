@@ -15,5 +15,6 @@ rabbit1:
     NAME: "rabbitmq"
   volumes:
     - "./enabled_plugins:/etc/rabbitmq/enabled_plugins"
+    - "/home/ubuntu/rabbitmq-database:/var/lib/rabbitmq/mnesia/rabbit@rabbit1"
     #- "./rabbitmq.config:/etc/rabbitmq/rabbitmq.config:ro"
     #- "./autocluster-0.4.1.ez:/usr/lib/rabbitmq/lib/rabbitmq_server-3.5.5/plugins/autocluster-0.4.1.ez"
